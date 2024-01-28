@@ -17,7 +17,7 @@ const findAllNotes = async (req, res) => {
     console.error("Error creating note:", error);
     return res
       .status(500)
-      .json({ error: "Internal Server Error", details: error.message });
+      .json({ error: "Internal Server Error", details: error });
   }
 };
 
